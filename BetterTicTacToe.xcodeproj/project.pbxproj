@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8C632C21E02F65200CE167D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632C11E02F65200CE167D /* AppDelegate.swift */; };
+		E8C632C41E02F65200CE167D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C632C31E02F65200CE167D /* Assets.xcassets */; };
+		E8C632C71E02F65200CE167D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C632C51E02F65200CE167D /* MainMenu.xib */; };
+		E8C632D21E02F65200CE167D /* BetterTicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632D11E02F65200CE167D /* BetterTicTacToeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8C632CE1E02F65200CE167D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C632B61E02F65100CE167D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C632BD1E02F65100CE167D;
+			remoteInfo = BetterTicTacToe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8C632BE1E02F65200CE167D /* BetterTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C632C11E02F65200CE167D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8C632C31E02F65200CE167D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8C632C61E02F65200CE167D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E8C632C81E02F65200CE167D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C632CD1E02F65200CE167D /* BetterTicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterTicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C632D11E02F65200CE167D /* BetterTicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterTicTacToeTests.swift; sourceTree = "<group>"; };
+		E8C632D31E02F65200CE167D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8C632BB1E02F65100CE167D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C632CA1E02F65200CE167D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8C632B51E02F65100CE167D = {
+			isa = PBXGroup;
+			children = (
+				E8C632C01E02F65200CE167D /* BetterTicTacToe */,
+				E8C632D01E02F65200CE167D /* BetterTicTacToeTests */,
+				E8C632BF1E02F65200CE167D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8C632BF1E02F65200CE167D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8C632BE1E02F65200CE167D /* BetterTicTacToe.app */,
+				E8C632CD1E02F65200CE167D /* BetterTicTacToeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8C632C01E02F65200CE167D /* BetterTicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				E8C632C11E02F65200CE167D /* AppDelegate.swift */,
+				E8C632C31E02F65200CE167D /* Assets.xcassets */,
+				E8C632C51E02F65200CE167D /* MainMenu.xib */,
+				E8C632C81E02F65200CE167D /* Info.plist */,
+			);
+			path = BetterTicTacToe;
+			sourceTree = "<group>";
+		};
+		E8C632D01E02F65200CE167D /* BetterTicTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C632D11E02F65200CE167D /* BetterTicTacToeTests.swift */,
+				E8C632D31E02F65200CE167D /* Info.plist */,
+			);
+			path = BetterTicTacToeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8C632BD1E02F65100CE167D /* BetterTicTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C632D61E02F65200CE167D /* Build configuration list for PBXNativeTarget "BetterTicTacToe" */;
+			buildPhases = (
+				E8C632BA1E02F65100CE167D /* Sources */,
+				E8C632BB1E02F65100CE167D /* Frameworks */,
+				E8C632BC1E02F65100CE167D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterTicTacToe;
+			productName = BetterTicTacToe;
+			productReference = E8C632BE1E02F65200CE167D /* BetterTicTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8C632CC1E02F65200CE167D /* BetterTicTacToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C632D91E02F65200CE167D /* Build configuration list for PBXNativeTarget "BetterTicTacToeTests" */;
+			buildPhases = (
+				E8C632C91E02F65200CE167D /* Sources */,
+				E8C632CA1E02F65200CE167D /* Frameworks */,
+				E8C632CB1E02F65200CE167D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C632CF1E02F65200CE167D /* PBXTargetDependency */,
+			);
+			name = BetterTicTacToeTests;
+			productName = BetterTicTacToeTests;
+			productReference = E8C632CD1E02F65200CE167D /* BetterTicTacToeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8C632B61E02F65100CE167D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = dayj;
+				TargetAttributes = {
+					E8C632BD1E02F65100CE167D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E8C632CC1E02F65200CE167D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8C632BD1E02F65100CE167D;
+					};
+				};
+			};
+			buildConfigurationList = E8C632B91E02F65100CE167D /* Build configuration list for PBXProject "BetterTicTacToe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8C632B51E02F65100CE167D;
+			productRefGroup = E8C632BF1E02F65200CE167D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8C632BD1E02F65100CE167D /* BetterTicTacToe */,
+				E8C632CC1E02F65200CE167D /* BetterTicTacToeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8C632BC1E02F65100CE167D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C632C41E02F65200CE167D /* Assets.xcassets in Resources */,
+				E8C632C71E02F65200CE167D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C632CB1E02F65200CE167D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8C632BA1E02F65100CE167D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C632C21E02F65200CE167D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C632C91E02F65200CE167D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C632D21E02F65200CE167D /* BetterTicTacToeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C632CF1E02F65200CE167D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C632BD1E02F65100CE167D /* BetterTicTacToe */;
+			targetProxy = E8C632CE1E02F65200CE167D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8C632C51E02F65200CE167D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C632C61E02F65200CE167D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8C632D41E02F65200CE167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8C632D51E02F65200CE167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E8C632D71E02F65200CE167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BetterTicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dayj.BetterTicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E8C632D81E02F65200CE167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BetterTicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dayj.BetterTicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E8C632DA1E02F65200CE167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BetterTicTacToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dayj.BetterTicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterTicTacToe.app/Contents/MacOS/BetterTicTacToe";
+			};
+			name = Debug;
+		};
+		E8C632DB1E02F65200CE167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BetterTicTacToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dayj.BetterTicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterTicTacToe.app/Contents/MacOS/BetterTicTacToe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8C632B91E02F65100CE167D /* Build configuration list for PBXProject "BetterTicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C632D41E02F65200CE167D /* Debug */,
+				E8C632D51E02F65200CE167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C632D61E02F65200CE167D /* Build configuration list for PBXNativeTarget "BetterTicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C632D71E02F65200CE167D /* Debug */,
+				E8C632D81E02F65200CE167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8C632D91E02F65200CE167D /* Build configuration list for PBXNativeTarget "BetterTicTacToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C632DA1E02F65200CE167D /* Debug */,
+				E8C632DB1E02F65200CE167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8C632B61E02F65100CE167D /* Project object */;
+}
