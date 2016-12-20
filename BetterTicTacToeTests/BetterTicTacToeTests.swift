@@ -10,27 +10,134 @@ import XCTest
 @testable import BetterTicTacToe
 
 class BetterTicTacToeTests: XCTestCase {
+    let testPlayers = [Player(name: "TestX"), Player(name: "TextO")]
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testInitFromSaved() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .o,
+            Board.Place(row: .middle, column: .middle) : .empty,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        XCTAssertTrue(savedState == resultingBoard.currentState)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testTextDescriptionOfBoard() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .o,
+            Board.Place(row: .middle, column: .middle) : .empty,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        let expectedBoard = "X | O | X\n----------\nO |   |  \n----------\nX |   | O\n"
+        XCTAssertEqual(resultingBoard.description, expectedBoard)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPlacingMarker() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .o,
+            Board.Place(row: .middle, column: .middle) : .empty,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        var resultingBoard = Board(savedState: savedState, players: testPlayers)
+        resultingBoard.placeMarker(Board.Marker.x, onPlace: Board.Place(row: .middle, column: .middle))
+        let resultMarker = resultingBoard.currentState[Board.Place(row: .middle, column: .middle)]
+        let expectedMarker = Board.Marker.x
+        XCTAssertTrue(resultMarker! == expectedMarker)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testHasWinningComboColumn() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .x,
+            Board.Place(row: .middle, column: .middle) : .empty,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        let didXWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.x)
+        let didOWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.o)
+        XCTAssertTrue(didXWin)
+        XCTAssertTrue(!didOWin)
+    }
+    
+    func testHasWinningComboRow() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .o,
+            Board.Place(row: .middle, column: .middle) : .o,
+            Board.Place(row: .middle, column: .right) : .o,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        let didXWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.x)
+        let didOWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.o)
+        XCTAssertTrue(!didXWin)
+        XCTAssertTrue(didOWin)
+    }
+    
+    func testHasWinningComboDiagonal() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .x,
+            Board.Place(row: .middle, column: .middle) : .x,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .x,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        let didXWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.x)
+        let didOWin = resultingBoard.hasWinningCombinations(marker: Board.Marker.o)
+        XCTAssertTrue(didXWin)
+        XCTAssertTrue(!didOWin)
+    }
+    
+    func testAvailablePlaces() {
+        let savedState: [Board.Place: Board.Marker] = [
+            Board.Place(row: .top, column: .left): .x,
+            Board.Place(row: .top, column: .middle) : .o,
+            Board.Place(row: .top, column: .right) : .x,
+            Board.Place(row: .middle, column: .left) : .o,
+            Board.Place(row: .middle, column: .middle) : .empty,
+            Board.Place(row: .middle, column: .right) : .empty,
+            Board.Place(row: .bottom, column: .left) : .x,
+            Board.Place(row: .bottom, column: .middle) : .empty,
+            Board.Place(row: .bottom, column: .right) : .o,
+            ]
+        let resultingBoard = Board(savedState: savedState, players: testPlayers)
+        
+        let result = resultingBoard.availablePlaces
+        let expected = [Board.Place(row: .middle, column: .middle), Board.Place(row: .middle, column: .right), Board.Place(row: .bottom, column: .middle)]
+        XCTAssertTrue(result == expected)
     }
     
 }

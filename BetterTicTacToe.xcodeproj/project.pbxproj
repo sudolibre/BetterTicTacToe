@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E88C65F51E0889930054E493 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C65F41E0889930054E493 /* Player.swift */; };
+		E88C65F71E088C930054E493 /* Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C65F61E088C930054E493 /* Winner.swift */; };
 		E8C632C21E02F65200CE167D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632C11E02F65200CE167D /* AppDelegate.swift */; };
 		E8C632C41E02F65200CE167D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C632C31E02F65200CE167D /* Assets.xcassets */; };
 		E8C632C71E02F65200CE167D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C632C51E02F65200CE167D /* MainMenu.xib */; };
 		E8C632D21E02F65200CE167D /* BetterTicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632D11E02F65200CE167D /* BetterTicTacToeTests.swift */; };
+		E8C632DD1E02F66300CE167D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632DC1E02F66300CE167D /* Main.swift */; };
+		E8C632E11E0458CC00CE167D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C632E01E0458CC00CE167D /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E88C65F41E0889930054E493 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E88C65F61E088C930054E493 /* Winner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
 		E8C632BE1E02F65200CE167D /* BetterTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C632C11E02F65200CE167D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C632C31E02F65200CE167D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		E8C632CD1E02F65200CE167D /* BetterTicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterTicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C632D11E02F65200CE167D /* BetterTicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterTicTacToeTests.swift; sourceTree = "<group>"; };
 		E8C632D31E02F65200CE167D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C632DC1E02F66300CE167D /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E8C632E01E0458CC00CE167D /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				E8C632C11E02F65200CE167D /* AppDelegate.swift */,
+				E8C632DC1E02F66300CE167D /* Main.swift */,
+				E88C65F41E0889930054E493 /* Player.swift */,
+				E88C65F61E088C930054E493 /* Winner.swift */,
+				E8C632E01E0458CC00CE167D /* Board.swift */,
 				E8C632C31E02F65200CE167D /* Assets.xcassets */,
 				E8C632C51E02F65200CE167D /* MainMenu.xib */,
 				E8C632C81E02F65200CE167D /* Info.plist */,
@@ -192,6 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C632DD1E02F66300CE167D /* Main.swift in Sources */,
+				E8C632E11E0458CC00CE167D /* Board.swift in Sources */,
+				E88C65F51E0889930054E493 /* Player.swift in Sources */,
+				E88C65F71E088C930054E493 /* Winner.swift in Sources */,
 				E8C632C21E02F65200CE167D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +407,7 @@
 				E8C632D81E02F65200CE167D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8C632D91E02F65200CE167D /* Build configuration list for PBXNativeTarget "BetterTicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +416,7 @@
 				E8C632DB1E02F65200CE167D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
